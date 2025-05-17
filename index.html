@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoftMill — Where Code Meets Craft</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a;
+      font-family: 'Vazirmatn', sans-serif;
+      color: #F4F6F8;
+      line-height: 1.7;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+    .logo {
+      max-width: 120px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    .section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .content-block {
+      margin-bottom: 2rem;
+    }
+    .lang-toggle {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .lang-toggle button {
+      background: #2E2E2E;
+      border: none;
+      color: #F4F6F8;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .links {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .links a {
+      color: #F59C1A;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="SoftMill Logo" class="logo">
+    <h1 id="title">SoftMill — Where Code Meets Craft</h1>
+  </header>
+
+  <div class="section">
+    <div class="content-block" id="desc-en">
+      <h2>🔧 What is SoftMill?</h2>
+      <p>SoftMill is a Software Factory-focused brand creating content for engineering teams. We explore DevOps, software quality, architecture, and post-launch maintenance — all with practical insights and real-world case studies.</p>
+
+      <h3>🎯 Main Themes</h3>
+      <ul>
+        <li>Operational DevOps training for dev teams (podcasts & videos)</li>
+        <li>Case studies of major IT companies and their strategic decisions</li>
+        <li>Topics like disaster recovery, security, and maintainability</li>
+      </ul>
+    </div>
+
+    <div class="content-block" id="desc-fa" style="display: none; text-align: right; direction: rtl;">
+      <h2>🔧 سافت‌میل چیست؟</h2>
+      <p>سافت‌میل یک برند با محوریت کارخانه نرم‌افزار است که محتوایی برای تیم‌های مهندسی نرم‌افزار تولید می‌کند. ما به موضوعاتی مثل دواپس عملی، کیفیت کد، معماری سیستم و نگهداری پس از لانچ می‌پردازیم — همراه با تحلیل‌های کاربردی و مثال‌های واقعی.</p>
+
+      <h3>🎯 مسیرهای محتوایی</h3>
+      <ul>
+        <li>آموزش عملیاتی DevOps برای تیم‌های توسعه (پادکست و ویدیو)</li>
+        <li>تحلیل تاریخچه برندهای مهم IT و تصمیمات استراتژیک آن‌ها</li>
+        <li>موضوعاتی مثل disaster recovery، امنیت و نگهداری محصول</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="lang-toggle">
+    <button onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('fa')">فارسی</button>
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/Soft-Mill-io" target="_blank">GitHub</a>
+    <a href="https://www.youtube.com/@SoftMill-io" target="_blank">YouTube</a>
+    <a href="https://t.me/SoftMill_io" target="_blank">Telegram</a>
+    <a href="https://www.linkedin.com/in/mohsen-meshkini/" target="_blank">LinkedIn</a>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      if (lang === 'en') {
+        document.getElementById('desc-en').style.display = 'block';
+        document.getElementById('desc-fa').style.display = 'none';
+        document.getElementById('title').textContent = 'SoftMill — Where Code Meets Craft';
+      } else {
+        document.getElementById('desc-en').style.display = 'none';
+        document.getElementById('desc-fa').style.display = 'block';
+        document.getElementById('title').textContent = 'سافت‌میل — جایی که کد تبدیل به مهندسی می‌شود';
+      }
+    }
+  </script>
+</body>
+</html>
